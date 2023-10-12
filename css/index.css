@@ -1,0 +1,142 @@
+/* common */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Hiragino Kaku Gothic Std;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Hiragino Kaku Gothic Std W8.otf");
+}
+
+body {
+  font-family: Hiragino Kaku Gothic Std !important;
+}
+
+.ofbyfor__title {
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  width: 45%;
+}
+
+.ofbyfor__text--content {
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.card__product {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__image--product {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.card__product--body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.card__product--title {
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.card__product--button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  width: 131px;
+  height: 30px;
+  border-radius: 0;
+}
+
+.card__product--link {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.card__product--link:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.ofbyfor__title--size1 {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.bg-gray {
+  background-color: #F3F4F5;
+}
+
+.footer {
+  background-color: #D9D9D9;
+  height: 404px;
+}
+
+/* ofbyfor_top */
+.card__container--body {
+  display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.card__container--button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  width: 131px;
+  height: 30px;
+  border-radius: 0;
+}
+
+.card__container--link {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* ofbyfor_hairoil */
+
+/* ofbyfor_handsoap */
+
+/* ofbyfor_perfume */
+
+/* ofbyfor_top2 */
