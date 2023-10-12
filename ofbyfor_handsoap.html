@@ -1,239 +1,557 @@
 <html>
   <head>
-    <title>Webpage</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>OFBYFOR HANDSOAP</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@500&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
-      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
-      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-    <style>
-      .slick-slider {
-        width: 800px;
-        height: 300px;
-        margin: 0 auto;
-      }
-      .slide {
-        width: 400px;
-        position: relative;
-        overflow: hidden;
-        margin: 0 10px;
-      }
-
-      .slide img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        transition: all 1s ease-out;
-      }
-
-      .slide.slick-center img {
-        transition: all 1s ease-out;
-        opacity: 1;
-      }
-
-      .slick-prev,
-      .slick-next {
-        width: 60px;
-        height: 60px;
-        border: none;
-        border-radius: 50%;
-        margin: auto;
-        position: absolute;
-        z-index: 3000;
-        top: 0;
-        bottom: 0;
-        cursor: pointer;
-        outline: none;
-      }
-
-      .slick-next {
-        right: calc(100% - 600px);
-        text-indent: 1px;
-        top: 30%;
-      }
-
-      .slick-prev {
-        left: calc(100% - 600px);
-        text-indent: -2px;
-        top: 30%;
-      }
-
-      .slick-arrow {
-        background: red;
-        border: none;
-        position: absolute;
-        bottom: 33px;
-        color: #fff;
-        font-size: 1.5rem;
-        padding: 0;
-        width: 33px;
-        height: 33px;
-        line-height: 34px;
-        text-align: center;
-        cursor: pointer;
-        z-index: 20;
-        -webkit-transition: background-color 0.2s ease 0s;
-        transition: background-color 0.2s ease 0s;
-      }
-
-      .slick-arrow:hover {
-        background-color: red;
-      }
-      .slide:before {
-        content: "";
-        display: block;
-      }
-
-      .slide figure {
-        position: absolute;
-        width: 80%;
-        height: 100%;
-      }
-      .slide figure:before,
-      .slide figure:after {
-        content: "";
-        position: absolute;
-        top: 10%;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.25);
-        background: -moz-linear-gradient(
-          top,
-          rgba(0, 0, 0, 0) 0%,
-          rgba(0, 0, 0, 0.7) 100%
-        );
-        background: -webkit-gradient(
-          left top,
-          left bottom,
-          color-stop(0%, rgba(0, 0, 0, 0)),
-          color-stop(100%, rgba(0, 0, 0, 0.7))
-        );
-        background: -webkit-linear-gradient(
-          top,
-          rgba(0, 0, 0, 0) 0%,
-          rgba(0, 0, 0, 0.7) 100%
-        );
-        background: -o-linear-gradient(
-          top,
-          rgba(0, 0, 0, 0) 0%,
-          rgba(0, 0, 0, 0.7) 100%
-        );
-        background: -ms-linear-gradient(
-          top,
-          rgba(0, 0, 0, 0) 0%,
-          rgba(0, 0, 0, 0.7) 100%
-        );
-        background: linear-gradient(
-          to bottom,
-          rgba(0, 0, 0, 0) 0%,
-          rgba(0, 0, 0, 0.7) 100%
-        );
-      }
-
-      .slide figure:before {
-        top: 0;
-        background: transparent;
-        z-index: 1;
-        -webkit-transition: background-color 0.4s ease 0s;
-        transition: background-color 0.4s ease 0s;
-      }
-    </style>
   </head>
   <body>
-    <div class="slider">
-      <div class="slide">
-        <figure>
-          <img src="https://loremflickr.com/860/640?random=1" alt="" />
-        </figure>
+    <div class="container-xl">
+      <div class="row">
+        <div class="col">
+          <img
+            src="./images/logo 1.png"
+            class="img-fluid mt-3 mb-3"
+            alt="logo"
+          />
+        </div>
       </div>
-      <div class="slide">
-        <figure>
-          <img src="https://loremflickr.com/860/640?random=2" alt="" />
-        </figure>
+      <div class="row mb-4">
+        <div class="col p-0">
+          <img src="./images/2 3.png" class="img-fluid w-100" alt="" />
+        </div>
       </div>
-      <div class="slide">
-        <figure>
-          <img src="https://loremflickr.com/860/640?random=3" alt="" />
-        </figure>
+      <div class="row mb-3">
+        <div class="col d-flex justify-content-center">
+          <img
+            src="./images/logo 1.png"
+            class="img-fluid mt-3 mb-3"
+            alt="logo"
+          />
+        </div>
       </div>
-      <div class="slide">
-        <figure>
-          <img src="https://loremflickr.com/860/640?random=4" alt="" />
-        </figure>
+      <div class="row mb-3">
+        <div
+          class="col d-flex justify-content-center align-items-center flex-column"
+        >
+          <h1 class="fz-16 ofbyfor__title">ハンドソープ</h1>
+          <h1 class="ofbyfor__title">
+            香りと香りの強さが選べて 優しく洗い上げるハンドソープ。
+          </h1>
+        </div>
+      </div>
+      <div class="row row-cols-1 g-4 mt-5">
+        <div class="col">
+          <div class="card__product2 d-flex justify-content-center mx-4">
+            <div
+              class="card__product2--body d-flex justify-content-center flex-column"
+            >
+              <h5 class="card__product2--title">選べる香り</h5>
+              <h5
+                class="card__product2--content ofbyfor__title fz-12 text-start w-100"
+              >
+                香水タイプ8種類、天然精油タイプ8種類の合計16種類から香りを選べます。
+              </h5>
+            </div>
+            <img
+              src="./images/Mask group (1).png"
+              class="card__product2--image ms-4"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1 g-4">
+        <div class="col">
+          <div class="card__product2 d-flex justify-content-center mx-4">
+            <img
+              src="./images/Mask group (3).png"
+              class="card__product2--image"
+              alt=""
+            />
+            <div
+              class="card__product2--body ms-4 d-flex justify-content-center flex-column"
+            >
+              <h5 class="card__product2--title">優しい洗浄力</h5>
+              <h5
+                class="card__product2--content ofbyfor__title fz-12 text-start w-100"
+              >
+                肌に優しい洗浄成分が 優しく洗い上げます。
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1 g-4 mt-5">
+        <div class="col">
+          <div class="card__product2 d-flex justify-content-center mx-4">
+            <div
+              class="card__product2--body d-flex justify-content-center flex-column"
+            >
+              <h5 class="card__product2--title">香りの強さ</h5>
+              <h5
+                class="card__product2--content ofbyfor__title fz-12 text-start w-100"
+              >
+                髪にほのかに香らせたい場合から、しっかり香りを付けたい場合まで5段階で香りの強さを選べます。
+              </h5>
+            </div>
+            <img
+              src="./images/Mask group (2).png"
+              class="card__product2--image ms-4"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row mb-5 mt-5">
+        <div class="col p-0 d-flex justify-content-center">
+          <img
+            src="./images/スクリーンショット 2023-09-05 6.50.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col p-0 d-flex justify-content-center">
+          <img
+            src="./images/スクリーンショット 2023-09-05 6.50 (1).png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col p-0 d-flex justify-content-center">
+          <button
+            type="button"
+            class="btn btn-dark card__product--button rounded-0"
+          >
+            <a href="#" class="card__product--link">特設ページへ</a>
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col d-flex justify-content-center mb-3 mt-4">
+          <img
+            src="./images/logo 1.png"
+            class="img-fluid mt-3 mb-3"
+            alt="logo"
+          />
+        </div>
+      </div>
+      <div class="row row-cols-2 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card__product">
+            <div class="card__product--box">
+              <img
+                src="./images/Group 1.png"
+                class="card__product--image"
+                alt=""
+              />
+            </div>
+            <div class="card__product--body">
+              <h5 class="card__product--title">
+                フルカスタマイズ シャンプー&トリートメント
+              </h5>
+              <button
+                type="button"
+                class="btn btn-dark card__product--button rounded-0"
+              >
+                <a href="#" class="card__product--link">特設ページへ</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card__product">
+            <div class="card__product--box">
+              <img
+                src="./images/hand 1.png"
+                class="card__product--image"
+                alt=""
+              />
+            </div>
+            <div class="card__product--body">
+              <h5 class="card__product--title">ハンドソープ</h5>
+              <button
+                type="button"
+                class="btn btn-dark card__product--button rounded-0"
+              >
+                <a href="#" class="card__product--link">特設ページへ</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card__product">
+            <div class="card__product--box">
+              <img
+                src="./images/7845843 1.png"
+                class="card__product--image"
+                alt=""
+              />
+            </div>
+            <div class="card__product--body">
+              <h5 class="card__product--title">パルファム</h5>
+              <button
+                type="button"
+                class="btn btn-dark card__product--button rounded-0"
+              >
+                <a href="#" class="card__product--link">特設ページへ</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card__product">
+            <div class="card__product--box">
+              <img
+                src="./images/51K72pBbIKL 1.png"
+                class="card__product--image"
+                alt=""
+              />
+            </div>
+            <div class="card__product--body">
+              <h5 class="card__product--title">ムエット</h5>
+              <button
+                type="button"
+                class="btn btn-dark card__product--button rounded-0"
+              >
+                <a href="#" class="card__product--link">特設ページへ</a>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <!-- order -->
+    <div class="mt-10 mx-0 px-0 py-4 ofbyfor__order">
+      <div class="row mx-0 px-0">
+        <div class="col d-flex justify-content-center mb-3">
+          <h2 class="ofbyfor__order--title">ORDER</h2>
+        </div>
+      </div>
+      <div class="row mx-0 px-0">
+        <div class="card__product3 d-flex">
+          <div class="card__product3--box">
+            <img
+              src="./images/hand 1.png"
+              class="card__product3--image"
+              alt=""
+            />
+          </div>
+          <div
+            class="card__product3--body d-flex justify-content-center flex-column"
+          >
+            <h5 class="card__product3--title">
+              OF BY FOR <br />ハンドソープ<br />
+              200mL
+            </h5>
+            <div class="card__product3--input d-flex align-items-end">
+              <input type="text" class="form-control" placeholder="" />
+              <h5 class="ofbyfor__order--unit ms-2 mb-0">個</h5>
+            </div>
+          </div>
+        </div>
+      </div>
 
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <div class="d-flex justify-content-center align-items-center my-4">
+        <img src="./images/Vector 3.png" class="ofbyfor__image--dots" alt="" />
+      </div>
+
+      <div class="row mx-0 px-0 mb-3">
+        <h3 class="fz-16 ofbyfor__title2">香りのタイプを選んでください</h3>
+      </div>
+
+      <div class="row mx-0 px-0 d-flex justify-content-center">
+        <div
+          style="width: 70%"
+          class="d-flex justify-content-center flex-column"
+        >
+          <div
+            class="custom-checkbox d-flex flex-column justify-content-center mb-3"
+          >
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault1"
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+                フレグランスタイプ 0,000円(税込)
+              </label>
+            </div>
+            <span class="badge badge-custom rounded-pill bg-dark mt-2"
+              >香りを選ぶ</span
+            >
+          </div>
+          <div
+            class="custom-checkbox d-flex flex-column justify-content-center"
+          >
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault2"
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                天然精油タイプ 0,000円(税込)
+              </label>
+            </div>
+            <span class="badge badge-custom rounded-pill bg-dark mt-2"
+              >香りを選ぶ</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="row mx-0 px-0 d-flex justify-content-center mt-4 mx-5">
+        <input
+          type="text"
+          class="form-control input-custom"
+          placeholder=""
+          value="イランイラン"
+        />
+      </div>
+
+      <div class="d-flex justify-content-center align-items-center my-4">
+        <img src="./images/Vector 3.png" class="ofbyfor__image--dots" alt="" />
+      </div>
+
+      <div class="row mx-0 px-0 d-flex justify-content-center mt-4 mx-5">
+        <h3 class="fz-16 ofbyfor__title2">香りの強さを選んでください</h3>
+      </div>
+
+      <div class="row mx-0 px-0 d-flex justify-content-center mt-4 mx-5">
+        <div
+          class="select__box--level d-flex justify-content-center align-items-end mb-4"
+        >
+          <div
+            class="select__item--level d-flex flex-column align-items-center justify-content-center"
+          >
+            <h4>#0</h4>
+            <h4>無香料</h4>
+          </div>
+          <div
+            class="select__item--level d-flex flex-column align-items-center justify-content-center"
+          >
+            <h4>#1</h4>
+            <h4>弱い</h4>
+          </div>
+          <div
+            class="select__item--level d-flex flex-column align-items-center justify-content-center"
+          >
+            <h4>#2</h4>
+            <h4>やや弱い</h4>
+          </div>
+        </div>
+        <div
+          class="select__box--level d-flex justify-content-center align-items-end"
+        >
+          <div
+            class="select__item--level d-flex flex-column align-items-center justify-content-center"
+          >
+            <h4>#3</h4>
+            <h4>ふつう</h4>
+          </div>
+          <div
+            class="select__item--level d-flex flex-column align-items-center justify-content-center"
+          >
+            <h4>#4</h4>
+            <h4>やや強い</h4>
+          </div>
+          <div
+            class="select__item--level d-flex flex-column align-items-center justify-content-center"
+          >
+            <h4>#5</h4>
+            <h4>強い</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center align-items-center my-4">
+        <img src="./images/Vector 3.png" class="ofbyfor__image--dots" alt="" />
+      </div>
+
+      <div class="row mx-0 px-0 d-flex justify-content-center mt-4 mx-5">
+        <h3 class="fz-16 ofbyfor__title2">配送先情報</h3>
+      </div>
+
+      <div class="row mx-0 px-0 d-flex justify-content-center mt-4 mx-5">
+        <div class="form__order--control mb-3">
+          <h3 class="form__order--label-ja">お名前:</h3>
+          <h3 class="form__order--label-en">YOUR NAME</h3>
+          <input
+            type="text"
+            name="name"
+            class="form-control input-custom"
+            placeholder=""
+          />
+        </div>
+        <div class="form__order--control mb-3">
+          <h3 class="form__order--label-ja">メールアドレス:</h3>
+          <h3 class="form__order--label-en">EMAIL</h3>
+          <input
+            type="text"
+            name="email"
+            class="form-control input-custom"
+            placeholder=""
+          />
+        </div>
+        <div class="form__order--control mb-3">
+          <h3 class="form__order--label-ja">*電話番号:</h3>
+          <h3 class="form__order--label-en">PHONE</h3>
+          <input
+            type="text"
+            name="phone"
+            class="form-control input-custom"
+            placeholder=""
+          />
+        </div>
+        <div class="form__order--control mb-3">
+          <h3 class="form__order--label-ja">*郵便番号:</h3>
+          <h3 class="form__order--label-en">POSTAL CODE</h3>
+          <input
+            type="text"
+            name="postal_code"
+            class="form-control input-custom"
+            placeholder=""
+          />
+        </div>
+        <div class="form__order--control mb-3">
+          <h3 class="form__order--label-ja">*都道府県:</h3>
+          <h3 class="form__order--label-en">PREFECTURE</h3>
+          <input
+            type="text"
+            name="prefecture"
+            class="form-control input-custom"
+            placeholder=""
+          />
+        </div>
+        <div class="form__order--control mb-3">
+          <h3 class="form__order--label-ja">*住所1:</h3>
+          <h3 class="form__order--label-en">ADDRESS1</h3>
+          <input
+            type="text"
+            name="address1"
+            class="form-control input-custom"
+            placeholder=""
+          />
+        </div>
+        <div class="form__order--control mb-3">
+          <h3 class="form__order--label-ja">*住所2:</h3>
+          <h3 class="form__order--label-en">ADDRESS2</h3>
+          <input
+            type="text"
+            name="address2"
+            class="form-control input-custom"
+            placeholder=""
+          />
+        </div>
+        <div class="form__order--control mb-3">
+          <h3 class="form__order--label-ja">キャンペーンコード:</h3>
+          <h3 class="form__order--label-en">code</h3>
+          <input
+            type="text"
+            name="code"
+            class="form-control input-custom"
+            placeholder=""
+          />
+        </div>
+        <div class="form__order--control mb-3">
+          <h3 class="form__order--label-ja">購入コード:</h3>
+          <h3 class="form__order--label-en">code</h3>
+          <input
+            type="text"
+            name="code2"
+            class="form-control input-custom"
+            placeholder=""
+          />
+        </div>
+      </div>
+
+      <div class="custom-checkbox d-flex justify-content-center mt-4">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault1"
+            id="flexRadioDefault3"
+          />
+          <label class="form-check-label" for="flexRadioDefault3">
+            クレジット
+          </label>
+        </div>
+        <div class="form-check ms-5">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault1"
+            id="flexRadioDefault4"
+          />
+          <label class="form-check-label" for="flexRadioDefault4">
+            代引き
+          </label>
+        </div>
+      </div>
+
+      <div class="row mx-0 px-0 d-flex justify-content-center mt-4 mx-5">
+        <h3 class="fz-16 ofbyfor__title2">
+          (※代引きは手数料が別途かかります※1万円未満→¥330 3万円未満→¥440
+          10万円未満→¥660)
+        </h3>
+      </div>
+
+      <div class="row mx-0 px-0 d-flex justify-content-center mt-4 mb-5 mx-5">
+        <div
+          class="form-check custom-checkbox d-flex justify-content-center align-items-center"
+        >
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked1"
+          />
+          <label class="form-check-label" for="flexCheckChecked1">
+            プライバシーポリシーに同意する
+          </label>
+        </div>
+      </div>
+
+      <div class="row mx-0 px-0 d-flex justify-content-center mt-4 mb-5 mx-5">
+        <button
+          type="button"
+          class="btn btn-dark button__submit--form rounded-0"
+        >
+          注文確認
+        </button>
+      </div>
+    </div>
+    <!-- end order -->
+    <div
+      class="row mx-0 px-0 footer w-100 d-flex justify-content-center align-items-end"
+    >
+      <div class="col d-flex justify-content-center mb-3">
+        <img src="./images/logo 1.png" class="img-fluid mt-3 mb-3" alt="logo" />
+      </div>
+    </div>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script type="text/javascript">
-      $(function () {
-        initSlider();
-      });
-
-      function initSlider() {
-        var slider = $(".slider");
-
-        slider.on("init", function (slick) {
-          checkSlides(this, 0);
-        });
-
-        slider.on(
-          "beforeChange",
-          function (event, slick, currentSlide, nextSlide) {
-            $(this).addClass("changing");
-          }
-        );
-
-        slider.on("afterChange", function (event, slick, currentSlide) {
-          $(this).removeClass("changing");
-          checkSlides(this, currentSlide);
-        });
-
-        slider.slick({
-          prevArrow:
-            "<button type='button' class='slick-prev' aria-label='Previous picture'></button>",
-          nextArrow:
-            "<button type='button' class='slick-next' aria-label='Next Picture'></button>",
-          centerMode: true,
-          variableWidth: true,
-          dots: false,
-          autoplay: false,
-          slidesToShow: 1,
-        });
-      }
-
-      function checkSlides(slider, currentSlide) {
-        var slides = $(".slide", $(slider));
-        slides.removeClass("prev");
-        slides
-          .filter(function (index) {
-            return $(this).attr("data-slick-index") < currentSlide;
-          })
-          .addClass("prev");
-      }
-    </script>
   </body>
 </html>
