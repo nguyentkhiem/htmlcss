@@ -272,6 +272,22 @@ body {
   text-align: left;
 }
 
+@media screen and (max-width: 500px) {
+  .card__product4--box {
+    width: 80px;
+    height: 100px;
+  }
+
+  .card__product4--title {
+    font-size: 8px;
+  }
+
+  .select__item--level {
+    width: 70px !important;
+    height: 70px !important;
+  }
+}
+
 .ofbyfor__image--dots {
   width: 100%;
   height: 1px;
