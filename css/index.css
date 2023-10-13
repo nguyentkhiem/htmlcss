@@ -23,16 +23,38 @@ body {
   font-size: 10px !important;
 }
 
+.fz-11 {
+  font-size: 11px !important;
+}
+
 .fz-12 {
   font-size: 12px !important;
+}
+
+.fz-13 {
+  font-size: 13px !important;
+}
+
+.fz-14 {
+  font-size: 14px !important;
 }
 
 .fz-16 {
   font-size: 16px !important;
 }
 
+.fz-20 {
+  font-size: 20px !important;
+}
+
 .mt-10 {
   margin-top: 5rem !important;
+}
+
+.fm2 {
+  font-family: Shippori Mincho;
+  font-weight: 400;
+  line-height: 18px;
 }
 
 .ofbyfor__title {
@@ -41,7 +63,6 @@ body {
   line-height: 25px;
   letter-spacing: 0em;
   text-align: center;
-  width: 45%;
 }
 
 .ofbyfor__title2 {
@@ -95,6 +116,10 @@ body {
   letter-spacing: 0em;
   text-align: center;
   margin-bottom: 15px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card__product--button {
@@ -137,10 +162,27 @@ body {
 
 .card__product2--image {
   flex: 0.2;
+  max-width: 135px;
+  max-height: 155px;
 }
 
 .card__product2--body {
   flex: 0.8;
+}
+
+.card__product2--title {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 18px;
+  letter-spacing: 0em;
+}
+
+.card__product2--content {
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .ofbyfor__order {
@@ -242,7 +284,6 @@ body {
   background: #fff;
   width: 84px;
   height: 84px;
-  margin: 0px 15px;
 }
 
 .select__item--level h4 {
@@ -252,7 +293,8 @@ body {
   text-align: left;
 }
 
-.form__order--label-ja, .form__order--label-en {
+.form__order--label-ja,
+.form__order--label-en {
   font-size: 14px;
   font-weight: 800;
   line-height: 20px;
@@ -294,10 +336,137 @@ body {
   text-decoration: none;
 }
 
-/* ofbyfor_hairoil */
-
-/* ofbyfor_handsoap */
-
 /* ofbyfor_perfume */
+.slick-slider {
+  width: 800px;
+  height: 300px;
+  margin: 0 auto;
+}
+.slide {
+  width: 400px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+.slide img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease-out;
+}
+
+.slide.slick-center img {
+  transition: all 1s ease-out;
+  opacity: 1;
+}
+
+.slick-prev,
+.slick-next {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  margin: auto;
+  position: absolute;
+  z-index: 3000;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.slick-next {
+  right: calc(100% - 600px);
+  text-indent: 1px;
+  top: 30%;
+}
+
+.slick-prev {
+  left: calc(100% - 600px);
+  text-indent: -2px;
+  top: 30%;
+}
+
+.slick-arrow {
+  background: red;
+  border: none;
+  position: absolute;
+  bottom: 33px;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0;
+  width: 33px;
+  height: 33px;
+  line-height: 34px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 20;
+  -webkit-transition: background-color 0.2s ease 0s;
+  transition: background-color 0.2s ease 0s;
+}
+
+.slick-arrow:hover {
+  background-color: red;
+}
+.slide:before {
+  content: "";
+  display: block;
+}
+
+.slide figure {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+}
+.slide figure:before,
+.slide figure:after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.25);
+  background: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(0, 0, 0, 0)),
+    color-stop(100%, rgba(0, 0, 0, 0.7))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+}
+
+.slide figure:before {
+  top: 0;
+  background: transparent;
+  z-index: 1;
+  -webkit-transition: background-color 0.4s ease 0s;
+  transition: background-color 0.4s ease 0s;
+}
 
 /* ofbyfor_top2 */
