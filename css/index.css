@@ -15,6 +15,11 @@ body {
   font-family: Hiragino Kaku Gothic Std !important;
 }
 
+.container-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .bg-gray {
   background-color: #f3f4f5;
 }
@@ -155,6 +160,15 @@ body {
   text-align: center;
 }
 
+.ofbyfor__title--size2 {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #bfbf54;
+}
+
 .footer {
   background-color: #d9d9d9;
   height: 159px;
@@ -237,6 +251,27 @@ body {
   text-align: left;
 }
 
+.card__product4--box {
+  width: 100px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__product4--image {
+  width: 100%;
+  height: auto;
+}
+
+.card__product4--title {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
 .ofbyfor__image--dots {
   width: 80%;
   height: 1px;
@@ -271,6 +306,7 @@ body {
   line-height: 25px;
   letter-spacing: 0em;
   color: #000000;
+  border: 1px solid #000000 !important;
 }
 
 .input-custom::placeholder {
@@ -442,12 +478,11 @@ body {
   transition: background-color 0.4s ease 0s;
 }
 
-
 @media screen and (max-width: 620px) {
   .slick-next {
     right: 20% !important;
   }
-  
+
   .slick-prev {
     left: 20% !important;
   }
@@ -457,7 +492,7 @@ body {
   .slick-next {
     right: 28% !important;
   }
-  
+
   .slick-prev {
     left: 28% !important;
   }
@@ -467,7 +502,7 @@ body {
   .slick-next {
     right: 30% !important;
   }
-  
+
   .slick-prev {
     left: 30% !important;
   }
